@@ -1,17 +1,22 @@
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=2332
 
-Pathogen is a simple library for manipulating comma delimited path options. Add this to your vimrc:
+Manage your 'runtimepath' with ease.  In practical terms, pathogen.vim makes it super easy to install plugins and runtime files in their own private directories.
 
-  call pathogen#runtime_append_all_bundles()
+Add this to your vimrc:
 
-After adding this, you can take any plugin, unzip/untar/svn-checkout/git-clone it to its own private directory in .vim/bundle, and it will be added to the runtime path.  This makes it easy to remove or update each plugin individually.
+    call pathogen#infect()
 
-The full list of functions includes:
+Now any plugins you wish to install can be extracted to a subdirectory under ~/.vim/bundle, and they will be added to the 'runtimepath'.
 
-pathogen#split: convert a comma delimited option to an array
-pathogen#join: convert an array to a comma delimited option
-pathogen#glob: wrapper around glob() that returns an array
-pathogen#runtime_prepend_subdirectories: prepend all subdirectories of a path to the runtimepath and append all after subsubdirectories
-pathogen#runtime_append_all_bundles: for each directory in the runtime path, look for a "bundle" entry and add the subdirectories of it to the path, as with runtime_prepend_subdirectories
+Use :Helptags to run :helptags on every doc/ directory in your 'runtimepath'.
+
+BONUS
+
+Use :Vedit, :Vsplit, and so on to easily edit files in your 'runtimepath'.
+For example, to edit pathogen.vim itself:
+
+    Ve a/pat<Tab>
+
+For more detailed, better formatted documentation, see the README on GitHub:
 
 http://github.com/tpope/vim-pathogen
