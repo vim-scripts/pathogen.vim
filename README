@@ -10,13 +10,6 @@ Now any plugins you wish to install can be extracted to a subdirectory under ~/.
 
 Use :Helptags to run :helptags on every doc/ directory in your 'runtimepath'.
 
-BONUS
-
-Use :Vedit, :Vsplit, and so on to easily edit files in your 'runtimepath'.
-For example, to edit pathogen.vim itself:
-
-    Ve a/pat<Tab>
-
 For more detailed, better formatted documentation, see the README on GitHub:
 
 http://github.com/tpope/vim-pathogen
